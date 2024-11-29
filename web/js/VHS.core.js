@@ -1425,7 +1425,7 @@ app.registerExtension({
             });
             addLoadCommon(nodeType, nodeData);
             addVAEOutputToggle(nodeType, nodeData);
-        } else if (nodeData?.name == "VHS_VideoCombine") {
+        } else if (nodeData?.name == "VHS_VideoCombine" || nodeData?.name == "VHS_VideoPreview") {
             addDateFormatting(nodeType, "filename_prefix");
             chainCallback(nodeType.prototype, "onExecuted", function(message) {
                 if (message?.gifs) {
