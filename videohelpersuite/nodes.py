@@ -233,7 +233,7 @@ class VideoPreview:
 
     RETURN_TYPES = ("IMAGE",)
     RETURN_NAMES = ("images",)
-    OUTPUT_NODE = False
+    OUTPUT_NODE = True
     CATEGORY = "Video Helper Suite 🎥🅥🅗🅢"
     FUNCTION = "combine_video"
 
